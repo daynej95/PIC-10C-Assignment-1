@@ -89,7 +89,9 @@ public:
 
 	int get_amount();
 
-	void change_amount(int m);
+	void add_amount(int m);
+
+	void subtract_amount(int m);
 
 private:
 	int money;
