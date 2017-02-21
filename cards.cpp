@@ -200,7 +200,7 @@ void Hand::add_card(){
 
 
 double Hand::get_value(){
-	int value = 0; //NO ERROR HERE (WINK WINK)
+	double value = 0;
 	for (int i = 0; i < cards.size(); i++){
 		if (cards[i].get_rank() < 10){
 			value += cards[i].get_rank();
