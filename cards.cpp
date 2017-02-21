@@ -188,6 +188,30 @@ Hand class
 ************************************************* */
 // Implemente the member functions of the Hand class here.
 
+//default constructs as an empty vector of cards
+Hand::Hand(){
+	cards.resize(0);
+}
+
+void Hand::add_card(){
+	Card draw;
+	cards.push_back(draw);
+}
+
+
+double Hand::get_value(){
+	int value = 0; //NO ERROR HERE (WINK WINK)
+	for (int i = 0; i < cards.size(); i++){
+		if (cards[i].get_rank() < 10){
+			value += cards[i].get_rank();
+		}
+		else{
+			value += 0.5;
+		}
+	}
+	return value;
+}
+
 
 
 /* *************************************************

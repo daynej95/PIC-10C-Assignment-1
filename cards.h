@@ -65,8 +65,17 @@ public:
 
 	// You decide what functions you'll need...
 
+	//adds a card to the hand
+	void add_card();
+
+	//returns the value of the hand
+	double get_value();
+
 private:
 	// You decide what fields you'll need...
+
+	vector<Card> cards;
+
 };
 
 
