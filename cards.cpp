@@ -218,3 +218,15 @@ double Hand::get_value(){
 Player class
 ************************************************* */
 // Implemente the member functions of the Player class here.
+
+Player::Player(int m){
+	money = m;
+}
+
+int Player::get_amount(){
+	return money;
+}
+
+void Player::change_amount(int m){
+	money = m;
+}

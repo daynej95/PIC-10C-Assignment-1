@@ -87,6 +87,10 @@ public:
 
 	// You decide what functions you'll need...
 
+	int get_amount();
+
+	void change_amount(int m);
+
 private:
 	int money;
 	// You decide what extra fields (if any) you'll need...
