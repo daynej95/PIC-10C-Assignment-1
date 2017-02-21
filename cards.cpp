@@ -227,6 +227,10 @@ int Player::get_amount(){
 	return money;
 }
 
-void Player::change_amount(int m){
-	money = m;
+void Player::add_amount(int m){
+	money += m;
+}
+
+void Player::subtract_amount(int m){
+	money -= m;
 }
